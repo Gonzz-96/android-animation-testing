@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
+            android:textColor="#000"
             android:text="Oh no!" />
 
         <TextView
@@ -28,5 +29,35 @@
             android:layout_marginTop="5dp"
             android:text="Something went wrong..." />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAnimatorButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/vwAnimatorTest">
+
+        <Button
+            android:id="@+id/btnXmlAnimator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Using XML" />
+
+        <Button
+            android:id="@+id/btnCodeAnimator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Using Code" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#4c4c4c"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/llAnimatorButtons"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
